@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/index.css">  
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+      <center>
+    <!-- Add an image that we will use to test -->
+    <h2>Image Classification</h2>
+    <img id="img" crossOrigin src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu7yIEcyNHOqC1y5ScsG1isP0daOYXkDQLIx2Ry1_yEjPZVw_nTQ" width=227 height=227/> 
+    
+    <div id="console_img">  </div>
+
+    <hr/>
+    <h2>Video Object Classification</h2>
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <div id="console_webcam"></div>
+
+    <hr/>
+    <h2>Train classification model on custom data</h2>
+    <div id="console_custom_classification"></div>
+    <video autoplay playsinline muted id="webcam_custom_classification" width="224" height="224"></video>
+    <div>
+    <button id="class-a">Item_1</button>
+    <button id="class-b">Item_2</button>
+    <button id="class-c">Item_3</button>
+</div>
+</center>
+    <!-- Load index.js after the content of the page -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
